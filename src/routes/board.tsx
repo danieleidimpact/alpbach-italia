@@ -28,8 +28,8 @@ const members = [
   },
   {
     role: "Tesoriere",
-    name: "Giovanni",
-    bio: "Bio in arrivo.",
+    name: "Giovanni Cesare Zoppi",
+    bio: "Avvocato di diritto internazionale presso uno studio legale in Lussemburgo. Membro di Amaranta, associazione di volontariato impegnata nella gestione di un orfanotrofio in Benin. Dal 2023, Tesoriere dell’odierno Club Alpbach Italia. Appassionato di dialogo internazionale e connessioni tra persone e culture.",
   },
   {
     role: "Segretaria generale",
