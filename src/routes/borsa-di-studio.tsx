@@ -19,7 +19,7 @@ export const Route = createFileRoute("/borsa-di-studio")({
 const requirements = [
   { t: "Età", d: "Tra i 18 e i 30/35 anni al momento della candidatura." },
   { t: "Inglese", d: "Livello minimo B2 — il Forum si svolge in lingua inglese." },
-  { t: "Residenza", d: "Residenza in Italia da almeno 5 anni." },
+  { t: "Residenza", d: "Residenza in Italia, escluse le regioni dell'Alto Adige, Veneto e Friuli-Venezia Giulia." },
   { t: "Disponibilità", d: "Disponibilità a partecipare all'intera durata del Forum." },
 ];
 
