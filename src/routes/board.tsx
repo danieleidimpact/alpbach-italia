@@ -48,8 +48,8 @@ const members = [
   },
   {
     role: "Social Media Manager",
-    name: "In definizione",
-    bio: "Ruolo in via di assegnazione.",
+    name: "Eleonora Zodo",
+    bio: "Laureata magistrale in Human-Computer Interaction presso l'università di Trento. La sua tesi di ricerca applicata sull'interazione tra umani e robot nella manifattura di dettaglio presso l'Austrian Institute of Technology di Vienna l'ha portata a vincere una borsa di dottorato presso l'Australian Cobotics Center. Al momento sta completando un dottorato di ricerca in Ingegneria presso Eindhoven University of Technology. Si è unita al board nel 2023, per continuare a promuovere i valori del forum. Associa ad Alpbach i cammini percorsi quando era scout: la montagna invita al rispetto e alla mediazione.",
   },
   {
     role: "Relazioni esterne",
