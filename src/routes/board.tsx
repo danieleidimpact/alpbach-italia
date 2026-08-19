@@ -51,6 +51,11 @@ const members = [
     name: "In definizione",
     bio: "Ruolo in via di assegnazione.",
   },
+  {
+    role: "Relazioni esterne",
+    name: "Carlotta Paladino",
+    bio: "Ricercatrice junior presso un think tank europeo, dove si occupa di analizzare le trasformazioni della cittadinanza, le forme di partecipazione civica e il ruolo di cittadini, associazioni e imprese nei processi democratici e nella costruzione di una cittadinanza europea. Ha studiato Amministrazione e Politiche Pubbliche a Roma, specializzandosi in particolare nell'analisi delle policy e nel policy design, con un forte interesse per le politiche sociali. Appassionata di politica e di Europa, è attiva in numerose realtà associative. Dopo l'esperienza come scholarship holder ad Alpbach nel 2025, ha deciso di entrare nel Club Italy e di sostenerlo, perché crede fortemente nel potenziale del Forum di far dialogare e incontrare giovani provenienti da diverse parti del mondo e con background differenti, stimolando dibattiti e idee con pragmatismo.",
+  },
 ];
 
 function initials(name: string) {
