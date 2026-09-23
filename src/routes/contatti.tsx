@@ -47,8 +47,8 @@ function ContactPage() {
             <div className="eyebrow text-foreground/60">Seguici</div>
             <div className="mt-4 grid gap-px bg-border">
               {[
-                { Icon: Instagram, t: "Instagram", h: "#" },
-                { Icon: Linkedin, t: "LinkedIn", h: "#" },
+                { Icon: Instagram, t: "Instagram", h: "https://www.instagram.com/clubalpbachitaly/" },
+                { Icon: Linkedin, t: "LinkedIn", h: "https://www.linkedin.com/company/club-alpbach-italy/" },
                 { Icon: ArrowUpRight, t: "European Forum Alpbach", h: "https://www.alpbach.org/" },
               ].map(({ Icon, t, h }) => (
                 <a
