@@ -9,6 +9,8 @@ export const Route = createFileRoute("/about")({
       { name: "description", content: "La storia del Forum Europeo di Alpbach e la missione del Club Alpbach Italia, fondato nel 2025." },
       { property: "og:title", content: "Chi siamo — Club Alpbach Italia" },
       { property: "og:description", content: "Dal 1945 a oggi: la storia del Forum di Alpbach e la nascita del Club Italia." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: "/about" },
     ],
     links: [{ rel: "canonical", href: "/about" }],

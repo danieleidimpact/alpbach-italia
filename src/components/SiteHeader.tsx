@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logoAsset from "@/assets/club-alpbach-italy-logo.png.asset.json";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -14,12 +15,13 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/85 backdrop-blur">
-      <div className="container-page flex h-16 items-center justify-between md:h-20">
-        <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <span className="grid h-8 w-8 place-items-center bg-alp-ink text-alp-cream text-[10px] font-black tracking-tight">CAI</span>
-          <span className="hidden text-sm font-semibold tracking-tight sm:block">
-            Club Alpbach Italia
-          </span>
+      <div className="container-page flex h-20 items-center justify-between md:h-24">
+        <Link to="/" className="flex items-center" onClick={() => setOpen(false)} aria-label="Club Alpbach Italy — Home">
+          <img
+            src={logoAsset.url}
+            alt="Club Alpbach Italy — Forum Alpbach Network"
+            className="h-14 w-auto md:h-16"
+          />
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">

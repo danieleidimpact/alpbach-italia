@@ -30,6 +30,8 @@
   --color-ring: var(--ring);
   --color-alp-green: var(--alp-green);
   --color-alp-green-soft: var(--alp-green-soft);
+  --color-alp-blue: var(--alp-blue);
+  --color-alp-teal: var(--alp-teal);
   --color-alp-ink: var(--alp-ink);
   --color-alp-cream: var(--alp-cream);
   --font-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
@@ -40,11 +42,13 @@
 :root {
   --radius: 0.25rem;
 
-  /* Brand palette inspired by alpbach.org */
-  --alp-green: oklch(0.82 0.13 135);        /* signature meadow green */
-  --alp-green-soft: oklch(0.92 0.06 135);
-  --alp-ink: oklch(0.16 0 0);                /* near-black */
-  --alp-cream: oklch(0.985 0.005 95);        /* off-white */
+  /* Club Alpbach Italy logo palette */
+  --alp-blue: oklch(0.7011 0.1 242.7);
+  --alp-teal: oklch(0.5549 0.0913 197.8);
+  --alp-green: var(--alp-blue);
+  --alp-green-soft: oklch(0.94 0.025 242.7);
+  --alp-ink: oklch(0.13 0 0);
+  --alp-cream: oklch(0.985 0.004 230);
 
   --background: var(--alp-cream);
   --foreground: var(--alp-ink);
@@ -58,8 +62,8 @@
   --secondary-foreground: var(--alp-ink);
   --muted: oklch(0.95 0.005 95);
   --muted-foreground: oklch(0.45 0.01 95);
-  --accent: var(--alp-green);
-  --accent-foreground: var(--alp-ink);
+  --accent: var(--alp-teal);
+  --accent-foreground: var(--alp-cream);
   --destructive: oklch(0.55 0.22 27);
   --destructive-foreground: oklch(0.985 0 0);
   --border: oklch(0.88 0.01 95);
@@ -79,7 +83,7 @@
   h1, h2, h3, h4 {
     font-family: var(--font-display);
     font-weight: 700;
-    letter-spacing: -0.02em;
+    letter-spacing: 0;
     line-height: 1.02;
   }
 }

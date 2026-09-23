@@ -9,6 +9,8 @@ export const Route = createFileRoute("/contatti")({
       { name: "description", content: "Scrivi al Club Alpbach Italia per la borsa di studio, eventi o collaborazioni." },
       { property: "og:title", content: "Contatti — Club Alpbach Italia" },
       { property: "og:description", content: "Mettiti in contatto con il Club Alpbach Italia." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: "/contatti" },
     ],
     links: [{ rel: "canonical", href: "/contatti" }],
