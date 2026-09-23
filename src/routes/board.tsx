@@ -8,6 +8,8 @@ export const Route = createFileRoute("/board")({
       { name: "description", content: "Il board del Club Alpbach Italia per il biennio 2025–2026: co-presidenti, tesoriere, segretario generale e responsabili." },
       { property: "og:title", content: "Board 2025–2026 — Club Alpbach Italia" },
       { property: "og:description", content: "Conosci i membri del board del Club Alpbach Italia." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: "/board" },
     ],
     links: [{ rel: "canonical", href: "/board" }],

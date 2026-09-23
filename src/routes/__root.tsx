@@ -87,11 +87,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Club Alpbach Italia" },
       { name: "twitter:description", content: "Il Club Alpbach Italia porta sul territorio italiano la missione del Forum Europeo di Alpbach." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/7cc88731-f9c5-46fb-9442-3a2786a8c881/id-preview-5df3e7dd--9f4f84e8-f858-4223-a56d-3b376956717a.lovable.app-1781653405928.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/7cc88731-f9c5-46fb-9442-3a2786a8c881/id-preview-5df3e7dd--9f4f84e8-f858-4223-a56d-3b376956717a.lovable.app-1781653405928.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
+       { rel: "icon", type: "image/png", href: "/favicon.png" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&display=swap" },
@@ -105,7 +104,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="it">
       <head>
         <HeadContent />
       </head>

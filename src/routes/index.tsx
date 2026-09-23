@@ -10,6 +10,8 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Il Club Alpbach Italia porta sul territorio italiano la missione del Forum Europeo di Alpbach: libertà, pace, pluralismo e responsabilità civica." },
       { property: "og:title", content: "Club Alpbach Italia" },
       { property: "og:description", content: "Sulla scia del Forum Europeo di Alpbach: giovani, ricerca e politica per un'Europa più forte." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: "/" },
     ],
     links: [{ rel: "canonical", href: "/" }],

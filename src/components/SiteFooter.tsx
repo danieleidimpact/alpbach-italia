@@ -1,13 +1,17 @@
 import { Link } from "@tanstack/react-router";
+import logoAsset from "@/assets/club-alpbach-italy-logo.png.asset.json";
 
 export function SiteFooter() {
   return (
     <footer className="mt-32 border-t border-border bg-alp-ink text-alp-cream">
       <div className="container-page grid gap-12 py-16 md:grid-cols-4">
         <div className="md:col-span-2">
-          <div className="flex items-center gap-3">
-            <span className="grid h-9 w-9 place-items-center bg-alp-cream text-alp-ink text-[10px] font-black">CAI</span>
-            <span className="text-base font-semibold">Club Alpbach Italia</span>
+          <div className="inline-flex bg-alp-blue p-4">
+            <img
+              src={logoAsset.url}
+              alt="Club Alpbach Italy — Forum Alpbach Network"
+              className="h-24 w-auto"
+            />
           </div>
           <p className="mt-6 max-w-md text-sm text-alp-cream/70">
             Pensare e agire per un'Europa fondata su libertà, pace, pluralismo e responsabilità civica.
