@@ -149,7 +149,7 @@ function Home() {
             <div className="md:col-span-8">
               <div className="eyebrow text-foreground/60">Candidature aperte</div>
               <h2 className="mt-4 text-3xl md:text-5xl">
-                Hai tra i 18 e i 35 anni? Vieni con noi ad Alpbach.
+                Hai tra i 18 e i 30 anni? Vieni con noi ad Alpbach.
               </h2>
             </div>
             <div className="md:col-span-4 md:text-right">

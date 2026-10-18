@@ -19,9 +19,35 @@ export const Route = createFileRoute("/borsa-di-studio")({
 });
 
 const requirements = [
-  { t: "Età", d: "Tra i 18 e i 30/35 anni al momento della candidatura." },
+  { t: "Età", d: "Tra i 18 e i 30 anni al momento della candidatura." },
   { t: "Inglese", d: "Livello minimo B2 — il Forum si svolge in lingua inglese." },
-  { t: "Residenza", d: "Residenza in Italia, escluse le regioni dell'Alto Adige, Veneto e Friuli-Venezia Giulia." },
+  {
+    t: "Residenza",
+    d: (
+      <>
+        Essere residenti in Italia, ad esclusione delle regioni Alto Adige, Veneto e Friuli
+        Venezia Giulia. I residenti in Alto Adige possono far riferimento al{" "}
+        <a
+          href="https://www.alpbach.bz.it/"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="font-medium underline underline-offset-4 hover:text-alp-blue"
+        >
+          Club Alpbach Sudtirol (CASA)
+        </a>{" "}
+        e i residenti in Veneto e Friuli Venezia Giulia a{" "}
+        <a
+          href="https://senza-confini.com/"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="font-medium underline underline-offset-4 hover:text-alp-blue"
+        >
+          Club Alpbach Senza Confini (CASC)
+        </a>
+        .
+      </>
+    ),
+  },
   { t: "Disponibilità", d: "Disponibilità a partecipare all'intera durata del Forum." },
 ];
 
@@ -41,7 +67,8 @@ function BorsaPage() {
             <h2 className="mt-4 text-3xl md:text-4xl">Chi può candidarsi.</h2>
             <p className="mt-6 text-base text-muted-foreground leading-relaxed">
               Per concorrere alla borsa di studio è necessario rispettare alcuni requisiti
-              di base. La selezione avviene poi su merito (CV) e motivazione.
+              di base. La selezione valuta merito, motivazione e condivisione dei valori
+              promossi da EFA.
             </p>
           </div>
           <div className="md:col-span-7">

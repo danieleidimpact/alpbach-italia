@@ -44,7 +44,7 @@ export function SiteHeader() {
           rel="noreferrer noopener"
           className="hidden md:inline-flex btn-ink"
         >
-          alpbach.org
+          EFA website
         </a>
 
         <button
