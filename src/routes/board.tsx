@@ -4,10 +4,10 @@ import { PageLayout, PageHero } from "@/components/PageLayout";
 export const Route = createFileRoute("/board")({
   head: () => ({
     meta: [
-      { title: "Board 2025–2026 — Club Alpbach Italia" },
-      { name: "description", content: "Il board del Club Alpbach Italia per il biennio 2025–2026: co-presidenti, tesoriere, segretario generale e responsabili." },
-      { property: "og:title", content: "Board 2025–2026 — Club Alpbach Italia" },
-      { property: "og:description", content: "Conosci i membri del board del Club Alpbach Italia." },
+      { title: "Board 2025–2026 — Club Alpbach Italy" },
+      { name: "description", content: "Il board del Club Alpbach Italy per il biennio 2025–2026: co-presidenti, tesoriere, segretario generale e responsabili." },
+      { property: "og:title", content: "Board 2025–2026 — Club Alpbach Italy" },
+      { property: "og:description", content: "Conosci i membri del board del Club Alpbach Italy." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: "/board" },
@@ -31,7 +31,7 @@ const members = [
   {
     role: "Tesoriere",
     name: "Giovanni Cesare Zoppi",
-    bio: "Avvocato di diritto internazionale presso uno studio legale in Lussemburgo. Membro di Amaranta, associazione di volontariato impegnata nella gestione di un orfanotrofio in Benin. Dal 2023, Tesoriere dell’odierno Club Alpbach Italia. Appassionato di dialogo internazionale e connessioni tra persone e culture.",
+    bio: "Avvocato di diritto internazionale presso uno studio legale in Lussemburgo. Membro di Amaranta, associazione di volontariato impegnata nella gestione di un orfanotrofio in Benin. Dal 2023, Tesoriere dell’odierno Club Alpbach Italy. Appassionato di dialogo internazionale e connessioni tra persone e culture.",
   },
   {
     role: "Segretaria generale",
@@ -41,7 +41,7 @@ const members = [
   {
     role: "Fundraising & Alumni Engagement",
     name: "Edoardo Ruvolo",
-    bio: "Giovane ricercatore al confine tra economia, energia, innovazione e transizione verde. Dopo la triennale all'Università di Trento, sta frequentando un Master in Quantitative Economics all'Université Paris Dauphine PSL e lavora all'OECD come economista. Contribuisce al Club Italia perché vede in Alpbach un luogo unico in cui incontrare persone stimolanti e confrontarsi con idee alla frontiera della ricerca. Appassionato di arte contemporanea, performativa e cucina.",
+    bio: "Giovane ricercatore al confine tra economia, energia, innovazione e transizione verde. Dopo la triennale all'Università di Trento, sta frequentando un Master in Quantitative Economics all'Université Paris Dauphine PSL e lavora all'OECD come economista. Contribuisce al Club Italy perché vede in Alpbach un luogo unico in cui incontrare persone stimolanti e confrontarsi con idee alla frontiera della ricerca. Appassionato di arte contemporanea, performativa e cucina.",
   },
   {
     role: "Event & PR",
@@ -76,7 +76,7 @@ function BoardPage() {
       <PageHero
         eyebrow="Board 2025–2026"
         title="Le persone dietro il Club."
-        intro="Il board del Club Alpbach Italia riunisce giovani professionisti, ricercatori e alumni del Forum impegnati a portare lo spirito di Alpbach in Italia."
+        intro="Il board del Club Alpbach Italy riunisce giovani professionisti, ricercatori e alumni del Forum impegnati a portare lo spirito di Alpbach in Italia."
       />
 
       <section className="container-page py-20 md:py-28">

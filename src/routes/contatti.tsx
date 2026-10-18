@@ -5,10 +5,10 @@ import { PageLayout, PageHero } from "@/components/PageLayout";
 export const Route = createFileRoute("/contatti")({
   head: () => ({
     meta: [
-      { title: "Contatti — Club Alpbach Italia" },
-      { name: "description", content: "Scrivi al Club Alpbach Italia per la borsa di studio, eventi o collaborazioni." },
-      { property: "og:title", content: "Contatti — Club Alpbach Italia" },
-      { property: "og:description", content: "Mettiti in contatto con il Club Alpbach Italia." },
+      { title: "Contatti — Club Alpbach Italy" },
+      { name: "description", content: "Scrivi al Club Alpbach Italy per la borsa di studio, eventi o collaborazioni." },
+      { property: "og:title", content: "Contatti — Club Alpbach Italy" },
+      { property: "og:description", content: "Mettiti in contatto con il Club Alpbach Italy." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: "/contatti" },

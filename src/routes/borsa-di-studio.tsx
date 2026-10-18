@@ -5,10 +5,10 @@ import { PageLayout, PageHero } from "@/components/PageLayout";
 export const Route = createFileRoute("/borsa-di-studio")({
   head: () => ({
     meta: [
-      { title: "Borsa di studio — Club Alpbach Italia" },
-      { name: "description", content: "Requisiti, criteri e processo di selezione della borsa di studio del Club Alpbach Italia per partecipare al Forum Europeo di Alpbach." },
-      { property: "og:title", content: "Borsa di studio — Club Alpbach Italia" },
-      { property: "og:description", content: "Candidati per partecipare al Forum Europeo di Alpbach con una borsa del Club Italia." },
+      { title: "Borsa di studio — Club Alpbach Italy" },
+      { name: "description", content: "Requisiti, criteri e processo di selezione della borsa di studio del Club Alpbach Italy per partecipare al Forum Europeo di Alpbach." },
+      { property: "og:title", content: "Borsa di studio — Club Alpbach Italy" },
+      { property: "og:description", content: "Candidati per partecipare al Forum Europeo di Alpbach con una borsa del Club Italy." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: "/borsa-di-studio" },
@@ -19,9 +19,35 @@ export const Route = createFileRoute("/borsa-di-studio")({
 });
 
 const requirements = [
-  { t: "Età", d: "Tra i 18 e i 30/35 anni al momento della candidatura." },
+  { t: "Età", d: "Tra i 18 e i 30 anni al momento della candidatura." },
   { t: "Inglese", d: "Livello minimo B2 — il Forum si svolge in lingua inglese." },
-  { t: "Residenza", d: "Residenza in Italia, escluse le regioni dell'Alto Adige, Veneto e Friuli-Venezia Giulia." },
+  {
+    t: "Residenza",
+    d: (
+      <>
+        Essere residenti in Italia, ad esclusione delle regioni Alto Adige, Veneto e Friuli
+        Venezia Giulia. I residenti in Alto Adige possono far riferimento al{" "}
+        <a
+          href="https://www.alpbach.bz.it/"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="font-medium text-alp-blue underline underline-offset-4 hover:text-alp-teal"
+        >
+          Club Alpbach Sudtirol (CASA)
+        </a>{" "}
+        e i residenti in Veneto e Friuli Venezia Giulia a{" "}
+        <a
+          href="https://senza-confini.com/"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="font-medium text-alp-blue underline underline-offset-4 hover:text-alp-teal"
+        >
+          Club Alpbach Senza Confini (CASC)
+        </a>
+        .
+      </>
+    ),
+  },
   { t: "Disponibilità", d: "Disponibilità a partecipare all'intera durata del Forum." },
 ];
 
@@ -30,7 +56,7 @@ function BorsaPage() {
     <PageLayout>
       <PageHero
         eyebrow="Borsa di studio"
-        title="Vai ad Alpbach con il Club Italia."
+        title="Vai ad Alpbach con il Club Italy."
         intro="Con il supporto della Fondazione EFA, ogni anno il board seleziona i beneficiari della borsa di studio per partecipare al Forum Europeo di Alpbach."
       />
 
@@ -41,7 +67,8 @@ function BorsaPage() {
             <h2 className="mt-4 text-3xl md:text-4xl">Chi può candidarsi.</h2>
             <p className="mt-6 text-base text-muted-foreground leading-relaxed">
               Per concorrere alla borsa di studio è necessario rispettare alcuni requisiti
-              di base. La selezione avviene poi su merito (CV) e motivazione.
+              di base. La selezione valuta merito, motivazione e condivisione dei valori
+              promossi da EFA.
             </p>
           </div>
           <div className="md:col-span-7">

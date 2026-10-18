@@ -6,8 +6,9 @@ import {
   useRouter,
   HeadContent,
   Scripts,
+  type ErrorComponentProps,
 } from "@tanstack/react-router";
-import { useEffect, type ReactNode } from "react";
+import { lazy, useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
@@ -34,7 +35,7 @@ function NotFoundComponent() {
   );
 }
 
-function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
+function ErrorComponent({ error, reset }: ErrorComponentProps) {
   console.error(error);
   const router = useRouter();
   useEffect(() => {
@@ -77,16 +78,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Club Alpbach Italia" },
-      { name: "description", content: "Il Club Alpbach Italia porta sul territorio italiano la missione del Forum Europeo di Alpbach." },
-      { name: "author", content: "Club Alpbach Italia" },
-      { property: "og:title", content: "Club Alpbach Italia" },
-      { property: "og:description", content: "Il Club Alpbach Italia porta sul territorio italiano la missione del Forum Europeo di Alpbach." },
+      { title: "Club Alpbach Italy" },
+      { name: "description", content: "Il Club Alpbach Italy porta sul territorio italiano la missione del Forum Europeo di Alpbach." },
+      { name: "author", content: "Club Alpbach Italy" },
+      { property: "og:title", content: "Club Alpbach Italy" },
+      { property: "og:description", content: "Il Club Alpbach Italy porta sul territorio italiano la missione del Forum Europeo di Alpbach." },
       { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "Club Alpbach Italia" },
+      { property: "og:site_name", content: "Club Alpbach Italy" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Club Alpbach Italia" },
-      { name: "twitter:description", content: "Il Club Alpbach Italia porta sul territorio italiano la missione del Forum Europeo di Alpbach." },
+      { name: "twitter:title", content: "Club Alpbach Italy" },
+      { name: "twitter:description", content: "Il Club Alpbach Italy porta sul territorio italiano la missione del Forum Europeo di Alpbach." },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -99,7 +100,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
   shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
-  errorComponent: ErrorComponent,
+  errorComponent: lazy(() => Promise.resolve({ default: ErrorComponent })),
 });
 
 function RootShell({ children }: { children: ReactNode }) {

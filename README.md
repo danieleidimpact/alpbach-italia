@@ -1,6 +1,6 @@
-# Club Alpbach Italia
+# Club Alpbach Italy
 
-Il sito web del **Club Alpbach Italia**, il club italiano del [Forum Europeo di Alpbach](https://www.alpbach.org/). Fondato nel 2025, il Club porta sul territorio italiano la missione storica di Alpbach: libertà, pace, pluralismo e responsabilità civica attraverso borse di studio, eventi e una rete di alumni.
+Il sito web del **Club Alpbach Italy**, il club italiano del [Forum Europeo di Alpbach](https://www.alpbach.org/). Fondato nel 2026, il Club porta sul territorio italiano la missione storica di Alpbach: libertà, pace, pluralismo e responsabilità civica attraverso borse di studio, eventi e una rete di alumni.
 
 ---
 
@@ -35,7 +35,7 @@ Utilità custom definite in `src/styles.css`: `.btn-ink`, `.btn-ghost`, `.contai
 | Route | Contenuto |
 |-------|-----------|
 | `/` | Home: hero, citazione Ventotene, tre pilastri missione, strip storica, CTA borsa |
-| `/about` | Storia del Forum (dal 1945) e nascita del Club Italia (2025) |
+| `/about` | Storia del Forum (dal 1945) e nascita del Club Italy (2026) |
 | `/board` | Board 2025–2026 con bio dei membri |
 | `/borsa-di-studio` | Requisiti e processo di selezione per la borsa EFA |
 | `/contatti` | Email, social e link al Forum Europeo |
