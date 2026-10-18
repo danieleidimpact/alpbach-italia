@@ -1,16 +1,16 @@
 import { Link } from "@tanstack/react-router";
-import logoAsset from "@/assets/club-alpbach-italy-logo.png.asset.json";
+import logoAsset from "@/assets/club-alpbach-italy-footer.png.asset.json";
 
 export function SiteFooter() {
   return (
-    <footer className="mt-32 border-t border-border bg-alp-ink text-alp-cream">
+    <footer className="mt-32 border-t border-border bg-alp-black text-alp-cream">
       <div className="container-page grid gap-12 py-16 md:grid-cols-4">
         <div className="md:col-span-2">
-          <div className="inline-flex bg-alp-blue p-4">
+          <div className="inline-flex max-w-full">
             <img
               src={logoAsset.url}
               alt="Club Alpbach Italy — Forum Alpbach Network"
-              className="h-24 w-auto"
+              className="h-auto w-72 max-w-full"
             />
           </div>
           <p className="mt-6 max-w-md text-sm text-alp-cream/70">

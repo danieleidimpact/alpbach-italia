@@ -46,7 +46,7 @@ function Home() {
             </div>
           </div>
           <div className="relative md:col-span-5">
-            <div className="aspect-[4/5] w-full overflow-hidden rounded-sm">
+            <div className="home-alpine-photo relative aspect-[4/5] w-full overflow-hidden rounded-sm">
               <img
                 src={heroAlps}
                 alt="Le verdi montagne del Tirolo, sede del Forum Europeo di Alpbach"
@@ -55,8 +55,11 @@ function Home() {
                 className="h-full w-full object-cover"
               />
             </div>
-            <div className="absolute -bottom-4 -left-4 hidden bg-alp-cream px-4 py-3 text-xs font-semibold md:block">
-              EFA · since 1945
+            <div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-alp-ink/25 pt-4 text-xs">
+              <span className="text-alp-ink/75">European Forum Alpbach · Dal 1945</span>
+              <a href="https://www.alpbach.org/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 font-semibold text-alp-ink underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-alp-ink">
+                EFA website <ArrowUpRight size={16} aria-hidden="true" />
+              </a>
             </div>
           </div>
         </div>
