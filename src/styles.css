@@ -33,6 +33,7 @@
   --color-alp-blue: var(--alp-blue);
   --color-alp-teal: var(--alp-teal);
   --color-alp-ink: var(--alp-ink);
+  --color-alp-black: var(--alp-black);
   --color-alp-cream: var(--alp-cream);
   --font-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
   --font-sans: "Archivo", "Helvetica Neue", Arial, sans-serif;
@@ -48,6 +49,7 @@
   --alp-green: var(--alp-blue);
   --alp-green-soft: oklch(0.94 0.025 242.7);
   --alp-ink: oklch(0.13 0 0);
+  --alp-black: oklch(0 0 0);
   --alp-cream: oklch(0.985 0.004 230);
 
   --background: var(--alp-cream);
@@ -86,6 +88,20 @@
     letter-spacing: 0;
     line-height: 1.02;
   }
+}
+
+/* A restrained cool treatment connects the alpine greens to the club blue. */
+.home-alpine-photo img {
+  filter: saturate(0.55) contrast(0.96);
+}
+.home-alpine-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--alp-blue);
+  mix-blend-mode: color;
+  opacity: 0.28;
+  pointer-events: none;
 }
 
 @utility container-page {
