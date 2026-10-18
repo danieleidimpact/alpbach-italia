@@ -39,7 +39,7 @@ export function SiteFooter() {
       </div>
       <div className="border-t border-alp-cream/10">
         <div className="container-page flex flex-col gap-2 py-6 text-xs text-alp-cream/60 md:flex-row md:items-center md:justify-between">
-          <span>© {new Date().getFullYear()} Club Alpbach Italia · Fondato nel 2025</span>
+          <span>© {new Date().getFullYear()} Club Alpbach Italy · Fondato nel 2026</span>
           <span>Made with care in the spirit of Alpbach.</span>
         </div>
       </div>

@@ -5,10 +5,10 @@ import { PageLayout, PageHero } from "@/components/PageLayout";
 export const Route = createFileRoute("/borsa-di-studio")({
   head: () => ({
     meta: [
-      { title: "Borsa di studio — Club Alpbach Italia" },
-      { name: "description", content: "Requisiti, criteri e processo di selezione della borsa di studio del Club Alpbach Italia per partecipare al Forum Europeo di Alpbach." },
-      { property: "og:title", content: "Borsa di studio — Club Alpbach Italia" },
-      { property: "og:description", content: "Candidati per partecipare al Forum Europeo di Alpbach con una borsa del Club Italia." },
+      { title: "Borsa di studio — Club Alpbach Italy" },
+      { name: "description", content: "Requisiti, criteri e processo di selezione della borsa di studio del Club Alpbach Italy per partecipare al Forum Europeo di Alpbach." },
+      { property: "og:title", content: "Borsa di studio — Club Alpbach Italy" },
+      { property: "og:description", content: "Candidati per partecipare al Forum Europeo di Alpbach con una borsa del Club Italy." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: "/borsa-di-studio" },
@@ -30,7 +30,7 @@ function BorsaPage() {
     <PageLayout>
       <PageHero
         eyebrow="Borsa di studio"
-        title="Vai ad Alpbach con il Club Italia."
+        title="Vai ad Alpbach con il Club Italy."
         intro="Con il supporto della Fondazione EFA, ogni anno il board seleziona i beneficiari della borsa di studio per partecipare al Forum Europeo di Alpbach."
       />
 

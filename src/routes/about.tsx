@@ -5,10 +5,10 @@ import { PageLayout, PageHero } from "@/components/PageLayout";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "Chi siamo — Club Alpbach Italia" },
-      { name: "description", content: "La storia del Forum Europeo di Alpbach e la missione del Club Alpbach Italia, fondato nel 2025." },
-      { property: "og:title", content: "Chi siamo — Club Alpbach Italia" },
-      { property: "og:description", content: "Dal 1945 a oggi: la storia del Forum di Alpbach e la nascita del Club Italia." },
+      { title: "Chi siamo — Club Alpbach Italy" },
+      { name: "description", content: "La storia del Forum Europeo di Alpbach e la missione del Club Alpbach Italy, fondato nel 2026." },
+      { property: "og:title", content: "Chi siamo — Club Alpbach Italy" },
+      { property: "og:description", content: "Dal 1945 a oggi: la storia del Forum di Alpbach e la nascita del Club Italy." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: "/about" },
@@ -24,7 +24,7 @@ function AboutPage() {
       <PageHero
         eyebrow="Chi siamo"
         title="Un Forum, una resistenza, una comunità europea."
-        intro="Il Club Alpbach Italia nasce nel 2025 per portare nel nostro Paese la missione del Forum Europeo di Alpbach: ottant'anni di pensiero libero, dialogo orizzontale e impegno per l'Europa."
+        intro="Il Club Alpbach Italy nasce nel 2026 per portare nel nostro Paese la missione del Forum Europeo di Alpbach: ottant'anni di pensiero libero, dialogo orizzontale e impegno per l'Europa."
       />
 
       <section className="container-page grid gap-16 py-20 md:grid-cols-12 md:py-28">
@@ -73,13 +73,13 @@ function AboutPage() {
         <div className="container-page grid gap-12 py-20 md:grid-cols-12 md:py-28">
           <div className="md:col-span-5">
             <div className="eyebrow text-foreground/60">La nostra missione</div>
-            <h2 className="mt-4 text-4xl md:text-5xl">Club Alpbach Italia</h2>
+            <h2 className="mt-4 text-4xl md:text-5xl">Club Alpbach Italy</h2>
           </div>
           <div className="md:col-span-7 space-y-6 text-base leading-relaxed text-foreground/85">
             <p>
-              Fondato nel 2025 sulla scia del <strong>Club Alpbach Trentino</strong> e in
+              Fondato nel 2026 sulla scia del <strong>Club Alpbach Trentino</strong> e in
               coordinazione con il <strong>Club Alpbach South Tyrol</strong> e il
-              <strong> Club Alpbach Senza Confini</strong>, il Club Alpbach Italia
+              <strong> Club Alpbach Senza Confini</strong>, il Club Alpbach Italy
               contribuisce alla missione del Forum Europeo di Alpbach sul territorio
               italiano.
             </p>
@@ -102,7 +102,7 @@ function AboutPage() {
             {[
               { y: "1945", t: "Nasce il Forum Europeo di Alpbach", d: "Otto Molden e Simon Moser fondano il Forum tra le montagne del Tirolo, sulla scia della resistenza europea al nazionalsocialismo." },
               { y: "2013", t: "Nasce il Club Alpbach Trentino", d: "Il primo Club italiano apre la strada alla rete italiana di borsisti e alumni del Forum." },
-              { y: "2025", t: "Nasce il Club Alpbach Italia", d: "In coordinazione con i Club Trentino, South Tyrol e Senza Confini, la missione di Alpbach si estende all'intero territorio italiano." },
+              { y: "2026", t: "Nasce il Club Alpbach Italy", d: "In coordinazione con i Club Trentino, South Tyrol e Senza Confini, la missione di Alpbach si estende all'intero territorio italiano." },
             ].map((s) => (
               <div key={s.y} className="grid grid-cols-12 gap-6 border-t border-border pt-6">
                 <div className="col-span-3 font-display text-3xl md:text-5xl">{s.y}</div>

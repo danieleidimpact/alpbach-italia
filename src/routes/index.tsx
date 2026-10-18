@@ -6,9 +6,9 @@ import { PageLayout } from "@/components/PageLayout";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Club Alpbach Italia — Pensare l'Europa, dal 1945" },
-      { name: "description", content: "Il Club Alpbach Italia porta sul territorio italiano la missione del Forum Europeo di Alpbach: libertà, pace, pluralismo e responsabilità civica." },
-      { property: "og:title", content: "Club Alpbach Italia" },
+      { title: "Club Alpbach Italy — Pensare l'Europa, dal 1945" },
+      { name: "description", content: "Il Club Alpbach Italy porta sul territorio italiano la missione del Forum Europeo di Alpbach: libertà, pace, pluralismo e responsabilità civica." },
+      { property: "og:title", content: "Club Alpbach Italy" },
       { property: "og:description", content: "Sulla scia del Forum Europeo di Alpbach: giovani, ricerca e politica per un'Europa più forte." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -26,7 +26,7 @@ function Home() {
       <section className="relative overflow-hidden bg-alp-green">
         <div className="container-page relative grid gap-12 py-20 md:grid-cols-12 md:py-28">
           <div className="md:col-span-7 lg:col-span-7">
-            <div className="eyebrow text-alp-ink/70">Club Alpbach Italia · Fondato nel 2025</div>
+            <div className="eyebrow text-alp-ink/70">Club Alpbach Italy · Fondato nel 2026</div>
             <h1 className="mt-6 text-5xl md:text-7xl lg:text-[5.5rem]">
               Pensare l'Europa<br />
               dalle <em className="font-serif font-normal italic">verdi</em> montagne del Tirolo.
