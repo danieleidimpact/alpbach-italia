@@ -31,7 +31,7 @@ const requirements = [
           href="https://www.alpbach.bz.it/"
           target="_blank"
           rel="noreferrer noopener"
-          className="font-medium underline underline-offset-4 hover:text-alp-blue"
+          className="font-medium text-alp-blue underline underline-offset-4 hover:text-alp-teal"
         >
           Club Alpbach Sudtirol (CASA)
         </a>{" "}
@@ -40,7 +40,7 @@ const requirements = [
           href="https://senza-confini.com/"
           target="_blank"
           rel="noreferrer noopener"
-          className="font-medium underline underline-offset-4 hover:text-alp-blue"
+          className="font-medium text-alp-blue underline underline-offset-4 hover:text-alp-teal"
         >
           Club Alpbach Senza Confini (CASC)
         </a>
