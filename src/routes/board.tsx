@@ -1,5 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageLayout, PageHero } from "@/components/PageLayout";
+import realdonPhoto from "@/assets/board-realdon.jpg.asset.json";
+import tassiPhoto from "@/assets/board-tassi.jpg.asset.json";
+import zoppiPhoto from "@/assets/board-zoppi.jpg.asset.json";
+import madedduPhoto from "@/assets/board-madeddu.jpg.asset.json";
+import ruvoloPhoto from "@/assets/board-ruvolo.jpg.asset.json";
+import zodoPhoto from "@/assets/board-zodo.jpg.asset.json";
+import paladinoPhoto from "@/assets/board-paladino.jpg.asset.json";
 
 export const Route = createFileRoute("/board")({
   head: () => ({
@@ -16,6 +23,16 @@ export const Route = createFileRoute("/board")({
   }),
   component: BoardPage,
 });
+
+const photos: Record<string, string> = {
+  "Mariaelisabetta Realdon": realdonPhoto.url,
+  "Lisa Tassi": tassiPhoto.url,
+  "Giovanni Cesare Zoppi": zoppiPhoto.url,
+  "Maura Madeddu": madedduPhoto.url,
+  "Edoardo Ruvolo": ruvoloPhoto.url,
+  "Eleonora Zodo": zodoPhoto.url,
+  "Carlotta Paladino": paladinoPhoto.url,
+};
 
 const members = [
   {
@@ -84,9 +101,20 @@ function BoardPage() {
           {members.map((m) => (
             <article key={m.role + m.name} className="bg-background p-8 md:p-10">
               <div className="flex items-start gap-5">
-                <div className="grid h-14 w-14 shrink-0 place-items-center rounded-full bg-alp-green text-alp-ink text-sm font-bold">
-                  {initials(m.name)}
-                </div>
+                {photos[m.name] ? (
+                  <img
+                    src={photos[m.name]}
+                    alt={`Ritratto di ${m.name}`}
+                    loading="lazy"
+                    width={128}
+                    height={128}
+                    className="h-24 w-24 shrink-0 rounded-full object-cover ring-1 ring-border md:h-28 md:w-28"
+                  />
+                ) : (
+                  <div className="grid h-24 w-24 shrink-0 place-items-center rounded-full bg-alp-green text-alp-ink text-sm font-bold md:h-28 md:w-28">
+                    {initials(m.name)}
+                  </div>
+                )}
                 <div>
                   <div className="eyebrow text-foreground/60">{m.role}</div>
                   <h2 className="mt-2 text-2xl md:text-3xl">{m.name}</h2>
