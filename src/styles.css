@@ -35,6 +35,8 @@
   --color-alp-ink: var(--alp-ink);
   --color-alp-black: var(--alp-black);
   --color-alp-cream: var(--alp-cream);
+  --color-alp-rust: var(--alp-rust);
+  --color-alp-olive: var(--alp-olive);
   --font-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
   --font-sans: "Archivo", "Helvetica Neue", Arial, sans-serif;
   --font-serif: "Instrument Serif", "Times New Roman", serif;
@@ -46,6 +48,9 @@
   /* Club Alpbach Italy logo palette */
   --alp-blue: oklch(0.7011 0.1 242.7);
   --alp-teal: oklch(0.5549 0.0913 197.8);
+  /* Campaign tesseramenti palette (dal volantino 2026/2027) */
+  --alp-rust: oklch(0.5319 0.1864 35);
+  --alp-olive: oklch(0.5655 0.0941 126.2);
   --alp-green: var(--alp-blue);
   --alp-green-soft: oklch(0.94 0.025 242.7);
   --alp-ink: oklch(0.13 0 0);
@@ -125,6 +130,20 @@
   border-radius: 9999px;
   transition: background 0.2s ease, color 0.2s ease;
   &:hover { background: var(--alp-ink); color: var(--alp-cream); }
+}
+
+@utility btn-rust {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--alp-rust);
+  color: var(--alp-cream);
+  padding: 0.85rem 1.4rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 9999px;
+  transition: transform 0.2s ease, background 0.2s ease;
+  &:hover { background: oklch(0.45 0.17 35); transform: translateY(-1px); }
 }
 
 @utility eyebrow {
