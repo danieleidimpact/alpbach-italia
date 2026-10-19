@@ -46,7 +46,7 @@ function Home() {
             </div>
           </div>
           <div className="relative md:col-span-5">
-            <div className="home-alpine-photo relative aspect-square w-full overflow-hidden rounded-sm">
+            <div className="relative aspect-square w-full overflow-hidden rounded-sm">
               <img
                 src={heroPhoto.url}
                 alt="I partecipanti al Forum Europeo di Alpbach in discussione in cerchio sui prati del villaggio"
