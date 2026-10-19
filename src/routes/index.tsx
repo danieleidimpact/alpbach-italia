@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowUpRight, ArrowRight } from "lucide-react";
-import heroAlps from "@/assets/hero-alps.jpg";
+import heroPhoto from "@/assets/hero-alpbach.jpg.asset.json";
 import { PageLayout } from "@/components/PageLayout";
 
 export const Route = createFileRoute("/")({
@@ -46,12 +46,12 @@ function Home() {
             </div>
           </div>
           <div className="relative md:col-span-5">
-            <div className="home-alpine-photo relative aspect-[4/5] w-full overflow-hidden rounded-sm">
+            <div className="home-alpine-photo relative aspect-square w-full overflow-hidden rounded-sm">
               <img
-                src={heroAlps}
-                alt="Le verdi montagne del Tirolo, sede del Forum Europeo di Alpbach"
-                width={1920}
-                height={1080}
+                src={heroPhoto.url}
+                alt="I partecipanti al Forum Europeo di Alpbach in discussione in cerchio sui prati del villaggio"
+                width={900}
+                height={900}
                 className="h-full w-full object-cover"
               />
             </div>
