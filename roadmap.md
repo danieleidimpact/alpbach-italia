@@ -4,3 +4,4 @@
 - [x] Sostituire il logo nel fondo pagina con la versione fornita, su nero.
 - [x] Verificare il risultato nel sito.
 - [x] Aggiungere le foto dei membri del board nella sezione Board.
+- [x] Sostituire la foto della home page con quella fornita.
