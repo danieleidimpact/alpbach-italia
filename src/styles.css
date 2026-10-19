@@ -90,19 +90,6 @@
   }
 }
 
-/* A restrained cool treatment connects the alpine greens to the club blue. */
-.home-alpine-photo img {
-  filter: saturate(0.55) contrast(0.96);
-}
-.home-alpine-photo::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: var(--alp-blue);
-  mix-blend-mode: color;
-  opacity: 0.28;
-  pointer-events: none;
-}
 
 @utility container-page {
   width: 100%;
