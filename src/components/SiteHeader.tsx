@@ -38,14 +38,19 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        <a
-          href="https://www.alpbach.org/"
-          target="_blank"
-          rel="noreferrer noopener"
-          className="hidden md:inline-flex btn-ink"
-        >
-          EFA website
-        </a>
+        <div className="hidden items-center gap-3 md:flex">
+          <Link to="/" hash="tesseramento" className="btn-rust">
+            Diventa socio
+          </Link>
+          <a
+            href="https://www.alpbach.org/"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="hidden lg:inline-flex btn-ghost"
+          >
+            EFA website
+          </a>
+        </div>
 
         <button
           aria-label="Toggle menu"
@@ -71,6 +76,9 @@ export function SiteHeader() {
                 {n.label}
               </Link>
             ))}
+            <Link to="/" hash="tesseramento" onClick={() => setOpen(false)} className="btn-rust mt-3 justify-center">
+              Diventa socio
+            </Link>
           </div>
         </div>
       )}
