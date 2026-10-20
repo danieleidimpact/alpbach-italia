@@ -32,11 +32,11 @@ function ContactPage() {
           <div className="md:col-span-6">
             <div className="eyebrow text-foreground/60">Scrivici</div>
             <a
-              href="mailto:info@clubalpbach.it"
+              href="mailto:club.italy@alpbach.network"
               className="mt-4 flex items-center gap-4 text-3xl md:text-5xl hover:text-alp-ink/70"
             >
               <Mail className="shrink-0" size={28} />
-              info@clubalpbach.it
+              club.italy@alpbach.network
             </a>
             <p className="mt-6 max-w-md text-base text-muted-foreground leading-relaxed">
               Rispondiamo entro pochi giorni lavorativi. Per richieste relative
