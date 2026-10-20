@@ -163,15 +163,15 @@ function Home() {
             <div className="mt-6 max-w-md rounded-sm border border-alp-rust/30 bg-alp-rust/5 p-4 text-sm font-semibold leading-relaxed text-alp-rust">
               Iscriviti prima del 31/10/2026 per votare nell'assemblea generale.
             </div>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <a href="mailto:club.italy@alpbach.network" className="btn-rust">
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <a href="mailto:club.italy@alpbach.network" className="btn-rust justify-center sm:w-auto">
                 Scrivici per mail <Mail size={16} aria-hidden="true" />
               </a>
               <a
                 href="https://www.instagram.com/clubalpbachitaly/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-ghost"
+                className="btn-ghost justify-center sm:w-auto"
               >
                 Scrivici in direct <Instagram size={16} aria-hidden="true" />
               </a>
