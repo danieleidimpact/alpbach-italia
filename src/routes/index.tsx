@@ -177,39 +177,44 @@ function Home() {
               </a>
             </div>
           </div>
-          <div className="grid gap-8 sm:grid-cols-3 md:col-span-7 sm:gap-6">
-            {[
-              {
-                img: photoPrato,
-                alt: "Sdraio e montagne tirolesi sul prato di Alpbach",
-                label: "Talks con esperti",
-              },
-              {
-                img: photoCerchio,
-                alt: "I partecipanti al Forum in discussione in cerchio sui prati",
-                label: "Comunità internazionale",
-              },
-              {
-                img: photoParata,
-                alt: "La sfilata delle bandiere tradizionali ad Alpbach",
-                label: "Eventi sul territorio",
-              },
-            ].map((p) => (
-              <figure key={p.label} className="flex flex-col">
-                <div className="aspect-[3/4] w-full overflow-hidden rounded-sm">
-                  <img
-                    src={p.img.url}
-                    alt={p.alt}
-                    className="h-full w-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-                <figcaption className="z-10 mx-4 -mt-5 flex items-center justify-center gap-2 rounded-full border border-border bg-card px-4 py-3 text-center text-sm font-semibold text-alp-olive shadow-sm">
-                  {p.label}
-                  <ArrowDown size={14} className="shrink-0 text-alp-rust" aria-hidden="true" />
-                </figcaption>
-              </figure>
-            ))}
+          <div className="min-w-0 md:col-span-7">
+            <div className="-mx-6 flex snap-x snap-mandatory gap-4 overflow-x-auto px-6 pb-2 sm:mx-0 sm:grid sm:grid-cols-3 sm:gap-6 sm:overflow-visible sm:px-0 sm:pb-0">
+              {[
+                {
+                  img: photoPrato,
+                  alt: "Sdraio e montagne tirolesi sul prato di Alpbach",
+                  label: "Talks con esperti",
+                },
+                {
+                  img: photoCerchio,
+                  alt: "I partecipanti al Forum in discussione in cerchio sui prati",
+                  label: "Comunità internazionale",
+                },
+                {
+                  img: photoParata,
+                  alt: "La sfilata delle bandiere tradizionali ad Alpbach",
+                  label: "Eventi sul territorio",
+                },
+              ].map((p) => (
+                <figure
+                  key={p.label}
+                  className="flex w-[72%] min-w-0 shrink-0 snap-start flex-col sm:w-auto"
+                >
+                  <div className="aspect-[3/4] w-full overflow-hidden rounded-sm">
+                    <img
+                      src={p.img.url}
+                      alt={p.alt}
+                      className="h-full w-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption className="z-10 mx-2 -mt-5 flex items-center justify-center gap-2 rounded-full border border-border bg-card px-3 py-2.5 text-center text-xs font-semibold text-alp-olive shadow-sm sm:mx-4 sm:py-3 sm:text-sm">
+                    <span className="min-w-0 truncate">{p.label}</span>
+                    <ArrowDown size={14} className="shrink-0 text-alp-rust" aria-hidden="true" />
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
           </div>
         </div>
       </section>
