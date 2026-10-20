@@ -1,6 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowUpRight, ArrowRight } from "lucide-react";
+import { ArrowUpRight, ArrowRight, ArrowDown, Mail, Instagram } from "lucide-react";
 import heroPhoto from "@/assets/hero-alpbach.jpg.asset.json";
+import photoPrato from "@/assets/tesseramento_prato.jpg.asset.json";
+import photoCerchio from "@/assets/tesseramento_cerchio.jpg.asset.json";
+import photoParata from "@/assets/tesseramento_parata.jpg.asset.json";
 import { PageLayout } from "@/components/PageLayout";
 
 export const Route = createFileRoute("/")({
@@ -145,8 +148,74 @@ function Home() {
         </div>
       </section>
 
+      {/* Tesseramento */}
+      <section id="tesseramento" className="container-page py-20 md:py-28">
+        <div className="grid gap-14 md:grid-cols-12 md:gap-12">
+          <div className="md:col-span-5">
+            <div className="eyebrow text-alp-olive">Campagna tesseramenti 2026/2027</div>
+            <h2 className="mt-4 text-3xl md:text-5xl">
+              È aperta la campagna: diventa socia/o del Club Alpbach Italy.
+            </h2>
+            <p className="mt-6 max-w-md text-base leading-relaxed text-muted-foreground">
+              Scrivici in direct o per mail, e scopri tutti i benefici di diventare
+              socia/o del Club Alpbach Italy.
+            </p>
+            <div className="mt-6 max-w-md rounded-sm border border-alp-rust/30 bg-alp-rust/5 p-4 text-sm font-semibold leading-relaxed text-alp-rust">
+              Iscriviti prima del 31/10/2026 per votare nell'assemblea generale.
+            </div>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a href="mailto:club.italy@alpbach.network" className="btn-rust">
+                Scrivici per mail <Mail size={16} aria-hidden="true" />
+              </a>
+              <a
+                href="https://www.instagram.com/clubalpbachitaly/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-ghost"
+              >
+                Scrivici in direct <Instagram size={16} aria-hidden="true" />
+              </a>
+            </div>
+          </div>
+          <div className="grid gap-8 sm:grid-cols-3 md:col-span-7 sm:gap-6">
+            {[
+              {
+                img: photoPrato,
+                alt: "Sdraio e montagne tirolesi sul prato di Alpbach",
+                label: "Talks con esperti",
+              },
+              {
+                img: photoCerchio,
+                alt: "I partecipanti al Forum in discussione in cerchio sui prati",
+                label: "Comunità internazionale",
+              },
+              {
+                img: photoParata,
+                alt: "La sfilata delle bandiere tradizionali ad Alpbach",
+                label: "Eventi sul territorio",
+              },
+            ].map((p) => (
+              <figure key={p.label} className="flex flex-col">
+                <div className="aspect-[3/4] w-full overflow-hidden rounded-sm">
+                  <img
+                    src={p.img.url}
+                    alt={p.alt}
+                    className="h-full w-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <figcaption className="z-10 mx-4 -mt-5 flex items-center justify-center gap-2 rounded-full border border-border bg-card px-4 py-3 text-center text-sm font-semibold text-alp-olive shadow-sm">
+                  {p.label}
+                  <ArrowDown size={14} className="shrink-0 text-alp-rust" aria-hidden="true" />
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
-      <section className="container-page py-20 md:py-28">
+      <section className="container-page pb-20 md:pb-28">
         <div className="rounded-sm border border-border bg-alp-green-soft p-10 md:p-16">
           <div className="grid items-end gap-10 md:grid-cols-12">
             <div className="md:col-span-8">
