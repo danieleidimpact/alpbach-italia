@@ -149,7 +149,7 @@ function Home() {
       </section>
 
       {/* Tesseramento */}
-      <section id="tesseramento" className="container-page py-20 md:py-28">
+      <section id="tesseramento" className="container-page scroll-mt-24 py-20 md:py-28">
         <div className="grid gap-14 md:grid-cols-12 md:gap-12">
           <div className="md:col-span-5">
             <div className="eyebrow text-alp-olive">Campagna tesseramenti 2026/2027</div>
