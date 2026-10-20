@@ -208,8 +208,8 @@ function Home() {
                       loading="lazy"
                     />
                   </div>
-                  <figcaption className="z-10 mx-2 -mt-5 flex items-center justify-center gap-2 rounded-full border border-border bg-card px-3 py-2.5 text-center text-xs font-semibold text-alp-olive shadow-sm sm:mx-4 sm:py-3 sm:text-sm">
-                    <span className="min-w-0 truncate">{p.label}</span>
+                  <figcaption className="z-10 mx-0 -mt-5 flex items-center justify-center gap-2 rounded-full border border-border bg-card px-3 py-2.5 text-center text-xs font-semibold text-alp-olive shadow-sm sm:-mx-6 sm:py-3 sm:text-sm">
+                    {p.label}
                     <ArrowDown size={14} className="shrink-0 text-alp-rust" aria-hidden="true" />
                   </figcaption>
                 </figure>
