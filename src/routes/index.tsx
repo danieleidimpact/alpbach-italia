@@ -149,7 +149,7 @@ function Home() {
       </section>
 
       {/* Tesseramento */}
-      <section id="tesseramento" className="container-page py-20 md:py-28">
+      <section id="tesseramento" className="container-page scroll-mt-24 py-20 md:py-28">
         <div className="grid gap-14 md:grid-cols-12 md:gap-12">
           <div className="md:col-span-5">
             <div className="eyebrow text-alp-olive">Campagna tesseramenti 2026/2027</div>
@@ -163,53 +163,58 @@ function Home() {
             <div className="mt-6 max-w-md rounded-sm border border-alp-rust/30 bg-alp-rust/5 p-4 text-sm font-semibold leading-relaxed text-alp-rust">
               Iscriviti prima del 31/10/2026 per votare nell'assemblea generale.
             </div>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <a href="mailto:club.italy@alpbach.network" className="btn-rust">
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <a href="mailto:club.italy@alpbach.network" className="btn-rust justify-center sm:w-auto">
                 Scrivici per mail <Mail size={16} aria-hidden="true" />
               </a>
               <a
                 href="https://www.instagram.com/clubalpbachitaly/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-ghost"
+                className="btn-ghost justify-center sm:w-auto"
               >
                 Scrivici in direct <Instagram size={16} aria-hidden="true" />
               </a>
             </div>
           </div>
-          <div className="grid gap-8 sm:grid-cols-3 md:col-span-7 sm:gap-6">
-            {[
-              {
-                img: photoPrato,
-                alt: "Sdraio e montagne tirolesi sul prato di Alpbach",
-                label: "Talks con esperti",
-              },
-              {
-                img: photoCerchio,
-                alt: "I partecipanti al Forum in discussione in cerchio sui prati",
-                label: "Comunità internazionale",
-              },
-              {
-                img: photoParata,
-                alt: "La sfilata delle bandiere tradizionali ad Alpbach",
-                label: "Eventi sul territorio",
-              },
-            ].map((p) => (
-              <figure key={p.label} className="flex flex-col">
-                <div className="aspect-[3/4] w-full overflow-hidden rounded-sm">
-                  <img
-                    src={p.img.url}
-                    alt={p.alt}
-                    className="h-full w-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-                <figcaption className="z-10 mx-4 -mt-5 flex items-center justify-center gap-2 rounded-full border border-border bg-card px-4 py-3 text-center text-sm font-semibold text-alp-olive shadow-sm">
-                  {p.label}
-                  <ArrowDown size={14} className="shrink-0 text-alp-rust" aria-hidden="true" />
-                </figcaption>
-              </figure>
-            ))}
+          <div className="min-w-0 md:col-span-7">
+            <div className="-mx-6 flex snap-x snap-mandatory gap-4 overflow-x-auto px-6 pb-2 sm:mx-0 sm:grid sm:grid-cols-3 sm:gap-6 sm:overflow-visible sm:px-0 sm:pb-0">
+              {[
+                {
+                  img: photoPrato,
+                  alt: "Sdraio e montagne tirolesi sul prato di Alpbach",
+                  label: "Talks con esperti",
+                },
+                {
+                  img: photoCerchio,
+                  alt: "I partecipanti al Forum in discussione in cerchio sui prati",
+                  label: "Comunità internazionale",
+                },
+                {
+                  img: photoParata,
+                  alt: "La sfilata delle bandiere tradizionali ad Alpbach",
+                  label: "Eventi sul territorio",
+                },
+              ].map((p) => (
+                <figure
+                  key={p.label}
+                  className="flex w-[72%] min-w-0 shrink-0 snap-start flex-col sm:w-auto"
+                >
+                  <div className="aspect-[3/4] w-full overflow-hidden rounded-sm">
+                    <img
+                      src={p.img.url}
+                      alt={p.alt}
+                      className="h-full w-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption className="z-10 mx-0 -mt-5 flex items-center justify-center gap-2 rounded-full border border-border bg-card px-3 py-2.5 text-center text-xs font-semibold text-alp-olive shadow-sm sm:-mx-4 sm:py-3 sm:text-sm">
+                    {p.label}
+                    <ArrowDown size={14} className="shrink-0 text-alp-rust" aria-hidden="true" />
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
           </div>
         </div>
       </section>
